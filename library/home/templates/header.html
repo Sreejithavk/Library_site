@@ -1,35 +1,52 @@
 <!DOCTYPE>
 <html>
+
+
    <head>
+        {% block head %}
           {% load static %}
-          {% block head %}
+         
               <title>  </title>
                   
-           {% endblock %}
-        
-        
+           
+    
+    {% endblock %}  
+
+     </head>   
+
+
+    
+
+      <body>
+
+
            <link href="{% static 'home/header.css' %}" rel="stylesheet" type="text/css"> 
            <div class="header">
+               <div class="center">
             
-               <h1>
-                     Goverment Engineering College, Thrissur  <br> College library
-               </h1>
-                <img src="{% static 'home/img/logo2.png' %}">
-
-            </div>
+                       <h2>
+                        <img src="{% static 'home/img/logo2.png' %}">
+                        Goverment Engineering College, Thrissur  <br> College library
+                       </h2>
+                  
+               </div>
+           </div>
                
-           
-           
-        
-    </head>
+        <div class="nav">
+         <ul>
+             <li> <a href="/home/"> Home </a> </li>
+             <li> <a href="/admin/"> Admin </a> </li>
+             <li> <a href="/login/"> Login </a> </li>
+             <li> <a href="/register/"> Register </a> </li>
+         </ul>
+     </div>
 
-   <body>
+          
         
-         {% block body %}
-          
-          
-         {% endblock %}
-   </body>
-    
+     
+
+      {% block body %}
+      {% endblock %}
+    </body>
 
 </html>

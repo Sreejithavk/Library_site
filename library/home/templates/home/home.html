@@ -11,14 +11,52 @@
 
 {% block body %}
 
-     <div class="nav">
-         <ul>
-             <li> <a href="home/"> Home </a> </li>
-             <li> <a href="/admin/"> Admin </a> </li>
-             <li> <a href="/login/"> Login </a> </li>
-             <li> <a href="/register/"> Register </a> </li>
-         </ul>
-     </div>
+    <div  class="center2">
+         {%  load static %}
+         
+         <p>
+              <img src="{% static 'home/img/library-img.jpg' %}">
+              <legend> Library </legend>
+              The library has more than 80,000+ books in 50000+ titles and back volume Journals.
+               It is fully automated and Online Public Access Catalogue (OPAC) is available to students
+              and staff. The Central library will remain open from 10 AM to 5 PM on all working days. 
+               For part time students the function on Wednesdays is up to 6 PM.The library has more than 
+               60,000 books and back volume Journals. It is fully automated and Online Public Access
+                Catalogue (OPAC) is available to students and staff. The Central library will remain open 
+                from 10 AM to 5 PM on all working days. For part time students the function on Wednesdays is up 
+                to 6 PM. Circulation Status: Approximately 40 to 50 thousand books are being borrowed by the readers
+                annually. More or less similar number of books is referred or consulted by the readers in the Central Library. 
+                Reference Section: A. A collection of 10,000 books on technology and 20,00 back volumes of journals are available 
+                in the library for reference. College Library is subscribing national and International Journals in various branches 
+                of engineering. In addition to this college library receives 45periodical publications as free of cost. Books and
+                Journals will not be permitted to take out from the reference section. Reprographic facility at concessional rate is
+                available to readers.
+              
+         </p> <br><br>
+         <p>
+             Identity Card is compulsory for using the Library facilities. Students and Staff are required to enter their names and 
+             reference details in the register kept in the reference section for that purpose. B. Dr. R.P.R. Nair, Educational Trust
+              Reference Library-contributed by old studentsDr. R.P. Rajagopalan Nair, who retired as post graduate professor in Civil 
+              Engineering Department, in 1988. C. Electronic Journals: Government Engineering College, Thrissur began to subscribe electronic 
+              journals to Faculty, Staff and Students in collaboration with the INDEST consortia. We will get electronic journals, supplied through 
+              INDEST and from other publishers including Science Direct. Sufficient number of nodes will be provided in the Central Library after 
+              discussions with the Officers, who are assigned the project. The following e-journals under AICTE-INDEST schemes are now available for
+               use of the college staff and students: 1. IEL – 1 user 2. ASME 3. SD Chemical & Biotech 4. DEL 5. SD-CE 6. SD(EE,EC,CS,IT) 7. ASCE for
+                details regarding methods of access, please visit htlg://panlit.litd.ac.in/indest/ and follow the user guide/help menu. D. Internet 
+                Facility Students and Staff can browse the Internet from the library free for their educational and research purposes.
+         </p>
+    </div>
+
+    <div class="footer">
+
+        <ul>
+            <li><a href="#"> Google </a></li> 
+            <li><a href="#"> Twitter </a></li>
+            <li><a href="#"> Facebook </a></li>
+            <li><a href="#"> Wikipedia </a></li>
+        </ul>
+      
+    </div>
 
 
 {% endblock %}

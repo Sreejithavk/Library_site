@@ -34,10 +34,13 @@ def register(request):
         password2 = request.POST['confirm_password']
         if password != password2:
             args  = {'message': 'password does not match'}
-            return render(request, 'home/login_page.html' ,args)
+            return render(request, 'home/signup.html' ,args)
         else:
             User.objects.create_user(username = username , password = password)
-            return redirect ('/home/')
+            return redirect ('/login/')
     else:
         return render(request, 'home/signup.html')
+
+def home_direct(request):
+    return redirect('/home')
     
